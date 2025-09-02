@@ -78,10 +78,14 @@ DATABASES = {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'littlelemon',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'Db060699#@',
         'HOST': 'localhost',
         'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
+    
 }
 
 
